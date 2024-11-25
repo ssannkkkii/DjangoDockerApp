@@ -6,7 +6,7 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /app
 
 RUN apt update -y && \
-    apt install -y python3-dev
+    apt install -y python3-dev libpq-dev gcc
 
 ADD pyproject.toml /app
 

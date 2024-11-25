@@ -11,3 +11,5 @@ services:
       - ../.env
     volumes:
       - ..:/app
+    depends_on:
+      - postgres  # Посилання на базу даних
